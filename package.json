@@ -4,10 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "install": "npm install && cd frontend && npm install",
+    "install": "npm install:backend && cd frontend && npm install",
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:backend": "nodemon --exec ts-node src/server.ts",
-    "start:frontend": "cd frontend && npm start"
+    "start:frontend": "cd frontend && npm start",
+    "install:backend": "npm install"
   },
   "author": "Chigorin Denis",
   "license": "ISC",
